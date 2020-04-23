@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="true"
+    android:background="#D5373737"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/turnon"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:text="@string/turn_on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+
+    <Button
+        android:id="@+id/turnoff"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:text="@string/turn_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/getpaired"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:text="@string/get_paired_devices"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:text="@string/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:text="@string/forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:text="@string/right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:text="@string/backward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="78dp"
+        android:layout_height="62dp"
+        android:background="@android:drawable/ic_delete"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <Button
+        android:id="@+id/closeapp"
+        android:layout_width="453dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="91dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:text="@string/close_app"
+        app:layout_constraintBottom_toTopOf="@+id/turnon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ceva"
+        android:layout_width="267dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/bluetooth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/closeapp"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/blue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
